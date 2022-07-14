@@ -12,17 +12,24 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   
   body{
     font-family: sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
   }
-  
+  p{
+    font-size: 1rem;
+  }
   section{
     min-height: 100vh;
    
+  }
+  footer{
+    bottom: 0;
+    max-height: 40vh;
   }
   /* NAVBAR STYLING */
   #navbar{
@@ -88,13 +95,22 @@
 
 /* LANDING */
 #landing {
-    background: linear-gradient(
-        0deg,
-        rgb(54 54 54 / 38%), rgb(20 20 20 / 43%)
-      ),
-      url(./assests/land4.jpg);
+    background:
+      url(./assests/bgremoved.png);
     background-position: center;
     background-size: cover;
+  background-color: var(--color5);
+  }
+
+  .profile{
+    bottom: 0;
+    right: 0;
+    margin-top: 2rem;
+  }
+
+  h1{
+    color: var(--color3);
+    text-shadow:#CBE8EC 2px ;
   }
 
   .title{
